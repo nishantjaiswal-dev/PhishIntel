@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ThreatEvent",
+  "type": "object",
+  "properties": {
+    "source": { "type": "string" },
+    "event_type": { "type": "string" },
+    "protected_site": { "type": "string" },
+    "suspected_clone": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "evidence": { "type": "object" },
+    "confidence": { "type": "number" }
+  },
+  "required": ["source", "event_type", "suspected_clone", "timestamp"]
+}

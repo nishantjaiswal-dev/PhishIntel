@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RiskReport",
+  "type": "object",
+  "properties": {
+    "report_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "total_incidents": { "type": "integer" },
+    "critical_count": { "type": "integer" },
+    "active_clones": { "type": "array", "items": { "type": "string" } }
+  }
+}
