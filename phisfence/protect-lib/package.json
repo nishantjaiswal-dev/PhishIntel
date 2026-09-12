@@ -1,0 +1,11 @@
+{
+  "name": "protect-lib",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "javascript-obfuscator src/ --output dist/ --compact true --self-defending true --disable-console-output true --string-array true --string-array-encoding base64"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.0.0"
+  }
+}
