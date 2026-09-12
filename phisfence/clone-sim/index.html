@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Phish Clone - Sim</title>
+  <!-- NOTE: attacker often copies page including script references -->
+  <!-- We simulate attacker copying the demo page and hosting on another host -->
+  <script>
+    window.PROTECT_MONITOR_URL = "http://localhost:5000";
+  </script>
+  <script src="../protect-lib/src/index.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>AcmeBank (Fake)</h1>
+    <p>This is a cloned page (simulated). The protection library is included because an attacker copied the HTML.</p>
+
+    <section class="login">
+      <h2>Login</h2>
+      <form onsubmit="event.preventDefault(); alert('This should be blocked in true clone scenario')">
+        <label>
+          Email
+          <input type="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" required />
+        </label>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>

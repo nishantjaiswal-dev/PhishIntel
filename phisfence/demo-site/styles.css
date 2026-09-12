@@ -1,0 +1,6 @@
+body { font-family: system-ui, Arial; margin: 0; padding: 40px; background: #f6f8fa; color:#111; }
+main { max-width:900px; margin:0 auto; background:#fff; padding:28px; border-radius:8px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+h1 { color: #1155cc; margin:0 0 12px; }
+.login form { display:flex; flex-direction:column; gap:12px; max-width:420px; }
+input { padding:8px 10px; border-radius:6px; border:1px solid #ddd; }
+button { padding:10px 14px; background:#1155cc; color:#fff; border:none; border-radius:6px; cursor:pointer; }
