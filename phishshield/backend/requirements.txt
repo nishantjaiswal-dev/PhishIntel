@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+
+transformers
+torch
+
+pydantic
+python-multipart
+
+requests
+beautifulsoup4
+
+python-whois
+tldextract
+
+lxml
